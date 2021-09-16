@@ -1,0 +1,13 @@
+{
+	"logo": "./graphics/VandA_logo.svg",
+	"link": "https://www.vam.ac.uk/",
+	"tag": "va",
+	"ep": "https://research.ng-london.org.uk/iiif-discovery/v&a/",
+	"list": [
+		"https://framemark.vam.ac.uk/collections/2021MX1249/info.json",
+		"https://framemark.vam.ac.uk/collections/2006AH4168/info.json",
+		"https://framemark.vam.ac.uk/collections/2012FH8395/info.json",
+		"https://framemark.vam.ac.uk/collections/2006AY9133/info.json"
+		],
+	"viewers": "both"
+}

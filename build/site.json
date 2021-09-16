@@ -1,0 +1,24 @@
+	{
+		"metaDescription": "Presenting a working example of a Simple IIIF discovery system based on Simple Site.",
+		"metaKeywords": "The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture, JSON, PHP, Javascript, Github Pages, Dissemination, VRE, IIIF, Discovery, Mirador, OpenSeadragon, AHRC, Towards a National Collection, SSHOC",
+		"metaAuthor": "Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk |www.nationalgallery.org.uk",
+		"metaTitle": "NG IIIF Simple Discovery",
+		"metaFavIcon": "/ss-dev/graphics/favicon.ico",
+		"site-prefix": "ss-dev/",
+		"logo_link": "./",
+		"licence": "<a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='/ss-dev/graphics/InC-EDU.dark-white-interior-blue-type.png'/></a>&nbsp;&nbsp;<a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a>",
+		"logo_path": "/ss-dev/graphics/ng-logo-white-100x40.png",
+		"footer": "<a href='https://www.nationalgallery.org.uk/terms-of-use'><img height='16' alt='&copy; The National Gallery 2021' title='&copy; The National Gallery 2021' src='/ss-dev/graphics/copyright-NG.png'/></a>",
+		"extra_logos": {
+			"github": {
+				"link": "https://github.com/jpadfield/simple-site",
+				"logo": "/ss-dev/graphics/github%20logo%20white.png",
+				"alt": "GitHub Jpadfield Simple-site"
+			}
+		},
+		"footer_cols": [3,1],
+		"extra_js_scripts": [],
+		"extra_css_scripts": [],
+		"extra_css": "",
+		"extra_js": ""
+	}
