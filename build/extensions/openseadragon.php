@@ -20,16 +20,22 @@ function extensionopenseadragon ($d, $pd)
 			{$dets["list"] = $d["file"];
 			 $dets["viewer"] = $d["osd-viewer"];
 			 $dets["background"] = $d["osd-background"];}
-		else if (file_exists($d["file"]))
-			{$dets = getRemoteJsonDetails($d["file"], false, true);}
+		else if (file_exists($d["file"])) 
+			{$dets = getRemoteJsonDetails($d["file"], false, true);}		
+		else if (filter_var($d["file"], FILTER_VALIDATE_URL)) 
+			{$dets = getRemoteJsonDetails($d["file"], false, true);
+			 if (isset($dets["sequences"]))
+				{$dets["list"] = manifestToList ($d["file"], array());}
+			 else if (isset($dets["protocol"]))
+				{$dets["list"] = array($d["file"]);}}		
 		else
 			{$dets = array();}
-			
-		if (!$dets) // was file not a json manifest
+	
+		if (!$dets) // file did not return valid json
 			{
 			$dets = getRemoteJsonDetails($d["file"], false, false);
 			$dets = explode(PHP_EOL, trim($dets));
-			
+	
 			foreach ($dets as $k => $v)
 				{
 				if (preg_match('/^.+info[.]json$/', $v))
@@ -39,7 +45,7 @@ function extensionopenseadragon ($d, $pd)
 				}
 			}
 		else
-			{
+			{			
 			if (isset($dets["list"]))
 				{
 				foreach ($dets["list"] as $k => $v)
@@ -54,7 +60,7 @@ function extensionopenseadragon ($d, $pd)
     }
    else
 		{$list = manifestToList ($d["file"]);}
-	
+
 	$imTotal = count($list);			
 	$tileSources = listToTiles ($list);
     
@@ -84,7 +90,8 @@ function extensionopenseadragon ($d, $pd)
 		});
 		';}
 	else
-		{$osdMode = "
+		{$morejs = "";
+		 $osdMode = "
 		sequenceMode: true,
 		showReferenceStrip: true,";}
 		
@@ -110,9 +117,8 @@ END;
 		{$bgc = "black";}
 	
 	$pd["extra_css"] .= ".openseadragon
-{
-    
-    height:     500px;
+{    
+    height:     400px;
     border:     1px solid black;
     color:      #333; /* text color for messages */
     background-color: $bgc;
