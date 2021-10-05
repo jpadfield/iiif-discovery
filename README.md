@@ -18,3 +18,7 @@ This project was developed and tested as part of the work of the following proje
 ## H2020 EU project [SSHOC](https://sshopencloud.eu/)
 <img height="64px" src="https://github.com/jpadfield/simple-site/blob/master/docs/graphics/sshoc-logo.png" alt="SSHOC Grant Info">
 <img height="32px" src="https://github.com/jpadfield/simple-site/blob/master/docs/graphics/sshoc-eu-tag2.png" alt="SSHOC Grant Info">
+
+## The H2020 [IPERION-HS](https://www.iperionhs.eu/) project
+[<img height="64px" src="https://github.com/jpadfield/simple-modelling/blob/master/docs/graphics/IPERION-HS%20Logo.png" alt="IPERION-HS">](https://www.iperionhs.eu/)<br/>
+[<img height="32px" src="https://github.com/jpadfield/simple-modelling/blob/master/docs/graphics/iperionhs-eu-tag2.png" alt="IPERION-HS">](https://www.iperionhs.eu/)
