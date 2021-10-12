@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/407302071.svg)](https://zenodo.org/badge/latestdoi/407302071)
 
-# iiif-discovery
+# Simple IIIF Discovery
 A development of the Simple-Site system to provide examples of Simple IIIF Discovery End-points.
 
 This code demonstrates generic public examples of a Simple IIIF Discovery system, based on tools used within the National Gallery to provide access to images from multiple institutions and present them together in IIIF compatible viewers.
