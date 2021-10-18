@@ -1,0 +1,33 @@
+{
+	"tag": "va",
+	"name": "The Victoria & Albert Museum",
+	"logo": "./graphics/VandA_logo.svg",
+	"link": "https://www.vam.ac.uk/",
+	"docURL": "",
+	"termsURL": "",
+	"comment": "The V&A is the world’s leading museum of art and design, housing a permanent collection of over 2.3 million objects that span over 5,000 years of human creativity. The Museum holds many of the UK's national collections and houses some of the greatest resources for the study of architecture, furniture, fashion, textiles, photography, sculpture, painting, jewellery, glass, ceramics, book arts, Asian art and design, theatre and performance.",
+	"examples": [
+		"https://framemark.vam.ac.uk/collections/2021MX1249/info.json",
+		"https://framemark.vam.ac.uk/collections/2006AH4168/info.json",
+		"https://framemark.vam.ac.uk/collections/2012FH8395/info.json",
+		"https://framemark.vam.ac.uk/collections/2006AY9133/info.json"],
+	"str": "public Victoria and Albert API. (Not all objects identified by the search fill include IIIF resources)",
+	"total": ["info","record_count"],
+	"results": [["records"]],
+	"page": true,
+	"api": ["https://api.vam.ac.uk/v2/objects/search?page=", "&page_size=", "&images_exist=1&q="],
+	"info": {
+		"value": ["_images","_iiif_image_base_url"],
+		"regex": "",
+		"regexNo": [],
+		"url": "",
+		"suffix": "info.json"
+	},
+	"manifests": {
+		"regex": "",
+		"regexNo": [],
+		"value": ["_images","_iiif_presentation_url"],
+		"url": "",
+		"suffix": ""
+	}
+}

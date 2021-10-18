@@ -1,0 +1,31 @@
+{
+	"tag": "ng",
+	"name": "The National Gallery",
+	"logo": "./graphics/The_National_Gallery_Logo.svg",
+	"link": "https://www.nationalgallery.org.uk",
+	"docURL": "",
+	"termsURL": "",
+	"comment": "The National Gallery Collection contains over 2,300 works, including many famous paintings, such as van Eyck’s [Arnolfini Portrait|https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait], Velázquez’s [Rokeby Venus|https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus], Turner’s [Fighting Temeraire|https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-the-fighting-temeraire], and Van Gogh’s [Sunflowers|https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers]. All of the major traditions of Western European painting are represented within the collection beginning with the late medieval period continuing up to the 20th century and the works of the French Impressionists.",
+	"examples": [
+		"https://data.ng-london.org.uk/iiif/image/01A3-0001-0000-0000/info.json",
+		"https://data.ng-london.org.uk/iiif/image/02C5-0001-0000-0000/info.json",
+		"https://data.ng-london.org.uk/iiif/image/028X-0001-0000-0000/info.json",
+		"https://data.ng-london.org.uk/iiif/image/06QG-0009-0000-0000/info.json"],
+	"str": "public National Gallery instance of ElasticSearch",	
+	"info": {
+		"total": ["hits", "total"],	
+		"api": ["https://data.ng-london.org.uk/elasticsearch/_search?_source=multimedia.admin.uid&default_operator=AND&from=", "&size=", "&q=type.base:object+(_exists_:multimedia)+"],
+		"results": [["hits", "hits"],["_source", "multimedia"]],
+		"value": ["admin", "uid"],
+		"url": "https://data.ng-london.org.uk/iiif/image/",
+		"suffix": "/info.json"
+	},
+	"manifests": {
+		"total": ["hits", "total"],	
+		"api": ["https://data.ng-london.org.uk/elasticsearch/_search?_source=multimedia.admin.uid&default_operator=AND&from=", "&size=", "&q=type.base:object+(_exists_:multimedia)+"],
+		"results": [["hits", "hits"]],
+		"value": ["_id"],
+		"url": "https://data.ng-london.org.uk/",
+		"suffix": ".iiif"
+	}
+}
