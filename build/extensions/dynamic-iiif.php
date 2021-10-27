@@ -610,11 +610,11 @@ function buildModalButton ($comment=false, $info=false, $list=false, $nav=false)
 	ob_start();
 	echo <<<END
 			<div class="row" style="padding:0.5rem;">				
-				<div class="col-xl-11 col-lg-10 col-md-9 col-7" style="padding-right:2px;display:table;" >
+				<div class="col-xl-11 col-lg-10 col-md-9  col-sm-7 col-6" style="padding-right:6px;padding-left:0px;display:table;" >
 					<span style="display:table-cell;vertical-align: middle;">$comment</span>
 				</div>
-				<div class="col-xl-1 col-lg-2 col-md-3 col-5" style="padding-left:0px;" >
-					<div class="container">
+				<div class="col-xl-1 col-lg-2 col-md-3 col-sm-5 col-6" style="padding:0px;" >
+					<div><div class="container"  style="padding:0px;">
 						<div class="row">
 							<div class="col d-flex justify-content-center">
 								<table>
@@ -628,7 +628,7 @@ function buildModalButton ($comment=false, $info=false, $list=false, $nav=false)
 							</div>
 						</div>
 						$nav
-					</div>
+					</div></div>
 				</div>
 			</div>
 END;

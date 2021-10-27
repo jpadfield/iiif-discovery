@@ -30,6 +30,10 @@ pre code {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 	}
+	
+.MuiAppBar-root {
+	z-index: 1029 !important;
+	}
 /*
 *
 * ==========================================
@@ -39,7 +43,7 @@ pre code {
 */
 
 .dropdown div a {
-  text-decoration: none; !important;  
+  text-decoration: none !important;  
 }
 
 .top-item {
